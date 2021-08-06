@@ -6587,7 +6587,7 @@ rng_bit_generator_p.def_abstract_eval(
 xla.translations[rng_bit_generator_p] = _rng_bit_generator_translation_rule
 
 RandomAlgorithm = xops.RandomAlgorithm
-RandomAlgorithm.__str__ = lambda algorithm: algorithm.name
+RandomAlgorithm.__str__ = lambda algorithm: algorithm.name  # type: ignore
 
 
 def rng_bit_generator(key,
