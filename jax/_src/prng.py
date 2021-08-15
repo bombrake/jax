@@ -33,7 +33,8 @@ from jax._src.pprint_util import pp, vcat
 from jax._src.util import prod
 
 
-UINT_DTYPES = {8: jnp.uint8, 16: jnp.uint16, 32: jnp.uint32, 64: jnp.uint64}
+UINT_DTYPES = {
+    8: jnp.uint8, 16: jnp.uint16, 32: jnp.uint32, 64: jnp.uint64}  # type: ignore[has-type]
 
 # -- PRNG implementation interface --
 
